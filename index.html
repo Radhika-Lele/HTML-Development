@@ -32,62 +32,115 @@
     img {
       max-width: 100%;
     }
-    .threeColumns{
-        width: 29.3%;
-        padding: 5% 2% 6%;
-        text-align: center;
-        float: left;
-        margin: 15px 0 32px;
+    .threeColumns {
+      width: 29.3%;
+      padding: 5% 2% 6%;
+      text-align: center;
+      float: left;
+      margin: 15px 0 32px;
     }
-    .threeColumns img{
-        max-width: 135px;
+    .threeColumns img {
+      max-width: 135px;
     }
-    h2{
-        font-weight: 700;
-        font-size: 28px;
-        letter-spacing: 1px;
-        margin: 20px 0 8px;
+    h2 {
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 1px;
+      margin: 20px 0 8px;
     }
-    p{
-        line-height: 26px;
-        margin-bottom: 15px;
+    p {
+      line-height: 26px;
+      margin-bottom: 15px;
     }
-    .btn{
-        background-color: #37a28f;
-        color: #ffffff;
-        text-decoration: none;
-        padding: 10px 14px;
-        font-size: 20px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        border-radius: 6px;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    .btn {
+      background-color: #37a28f;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 14px;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      border-radius: 6px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     }
-    .btn:hover{
-       background-color: #3db5a0;
-       color: #fff;
-       transition: 0.4;
+    .btn:hover {
+      background-color: #3db5a0;
+      color: #fff;
+      transition: 0.4;
     }
-    hr.orange{
-        border:1px solid #fe6b58;
+    hr.orange {
+      border: 1px solid #fe6b58;
+      width: 96%;
+      margin: 15px;
+    }
+    .twoColumns {
+      float: left;
+      width: 46%;
+      padding: 5% 2%;
+      margin: 10px 0 26px;
+    }
+    .twoColumns h2 {
+      margin: 0;
+    }
+    ul.social{
+      list-style-type: none;
+      text-align: center;
+      padding: 10px;
+      margin: 20px 0 5px;
+      width: 96%;
+    }
+    ul.social li{
+      display: inline;
+    }
+    ul.social li img{
+      max-width: 40px;
+    }
+    .contact{
+      text-align: center;
+      color: #2b9684;
+      font-weight: 500;
+      line-height: 30px;
+      padding-bottom: 6%;
+      transition: 0.2;
+    }
+    .contact a{
+      color: #2b9684;
+      text-decoration: none;
+    }
+    .contact a:hover{
+      color: #fe6b58;
+    }
+    @media (max-width : 600px){
+      body{
+        padding: 5px;
+      }
+      .threeColumns, .twoColumns{
         width: 96%;
-        margin: 15px ;
-    }
-    .twoColumns{
-        float: left;
-        width:46%;
-        padding: 5% 2%;
-        margin: 10px 0 26px;
-    }
-    .twoColumns h2{
-        margin: 0;
+        margin: 0 0 35px;
+      }
+      .banner{
+        margin-bottom: 20px;
+      }
+      .threeColumns img {
+        max-width: 155px;
+      }
+      hr.orange{
+        margin-bottom: 30px;
+      }
+      .twoColumns.second{
+            padding-left: 15px;
+            padding-bottom: 30px;
+      }
     }
   </style>
   <body>
     <div class="wrapper">
       <div class="logo">
         <a href="https://www.w3schools.com/html/" target="_blank"
-          ><img src="https://i.ibb.co/JtckNqn/logo.png" alt="banner" title="HTML5 logo"
+          ><img
+            src="https://i.ibb.co/JtckNqn/logo.png"
+            alt="banner"
+            title="HTML5 logo"
         /></a>
       </div>
       <a href="https://www.w3schools.com/html/"
@@ -97,57 +150,110 @@
           class="banner"
           alt="banner"
       /></a>
-      
+
       <div class="threeColumns">
         <a href="https://example.com" target="_blank"
-          ><img src="https://i.ibb.co/tHQy3gL/mouse.png" alt="Mouse" title="Mouse"
+          ><img
+            src="https://i.ibb.co/tHQy3gL/mouse.png"
+            alt="Mouse"
+            title="Mouse"
         /></a>
         <h2>Email Development</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci quasi aut libero natus pariatur voluptatibus.</p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
+          quasi aut libero natus pariatur voluptatibus.
+        </p>
         <div class="buttonHolder">
-            <a href="https://example.com" target="_blank" class="btn">Learn More</a>
+          <a href="https://example.com" target="_blank" class="btn"
+            >Learn More</a
+          >
         </div>
       </div>
 
       <div class="threeColumns">
         <a href="https://example.com" target="_blank"
-          ><img src="https://i.ibb.co/42MJn1V/phone.png" alt="Phone" title="Phone"
+          ><img
+            src="https://i.ibb.co/42MJn1V/phone.png"
+            alt="Phone"
+            title="Phone"
         /></a>
         <h2>Mobile Friendly</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci quasi aut libero natus pariatur voluptatibus.</p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
+          quasi aut libero natus pariatur voluptatibus.
+        </p>
         <div class="buttonHolder">
-            <a href="https://example.com" target="_blank" class="btn">HTML Email</a>
+          <a href="https://example.com" target="_blank" class="btn"
+            >HTML Email</a
+          >
         </div>
       </div>
 
       <div class="threeColumns">
         <a href="https://example.com" target="_blank"
-          ><img src="https://i.ibb.co/RD0sR6V/computer.png" alt="Desktop" title="desktop"
+          ><img
+            src="https://i.ibb.co/RD0sR6V/computer.png"
+            alt="Desktop"
+            title="desktop"
         /></a>
         <h2>Desktop Clients</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci quasi aut libero natus pariatur voluptatibus.</p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
+          quasi aut libero natus pariatur voluptatibus.
+        </p>
         <div class="buttonHolder">
-            <a href="https://example.com" target="_blank" class="btn">Developmet</a>
+          <a href="https://example.com" target="_blank" class="btn"
+            >Developmet</a
+          >
         </div>
       </div>
-      
-      <hr class="orange">
-       <div class="twoColumns">
-        <a href="https://example.com" target="_blank"
-        ><img src="https://i.ibb.co/NKdYy92/pie-chart.png" alt="piechart" title="piechart"
-      /></a>
-       </div>
-            <div class="twoColumns second">
-            <h2>Latest Email Design</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque sunt commodi quas veritatis necessitatibus.</p>
-            <div class="buttonHolder">
-                <a href="https://example.com" target="_blank" class="btn">Email Design Course</a>
-            </div>
-            </div>
 
-       
-      <hr class="orange">
-    </div> <!--End of wrapper-->
+      <hr class="orange" />
+      <div class="twoColumns">
+        <a href="https://example.com" target="_blank"
+          ><img
+            src="https://i.ibb.co/NKdYy92/pie-chart.png"
+            alt="piechart"
+            title="piechart"
+        /></a>
+      </div>
+      <div class="twoColumns second">
+        <h2>Latest Email Design</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque sunt
+          commodi quas veritatis necessitatibus.
+        </p>
+        <div class="buttonHolder">
+          <a href="https://example.com" target="_blank" class="btn"
+            >Email Design Course</a
+          >
+        </div>
+      </div>
+
+      <hr class="orange" />
+      <ul class="social">
+        <li><a href="https://example.com"><img src="https://i.ibb.co/5cp6Gtb/facebook.png" alt="facebook" title="facbook"></a></li>
+        <li><a href="https://example.com"><img src="https://i.ibb.co/m4PgXq6/twitter.png" alt="twitter" title="facbook"></a></li>
+        <li><a href="https://example.com"><img src="https://i.ibb.co/Ttf0YmH/youtube.png" alt="youtube" title="facbook"></a></li>
+        <li><a href="https://example.com"><img src="https://i.ibb.co/8brZJJt/instagram.png" alt="instagram" title="facbook"></a></li>
+        <li><a href="https://example.com"><img src="https://i.ibb.co/3zn6mW3/linkedin.png" alt="linkedin" title="facbook"></a></li>    
+      </ul>
+      <p class="contact">
+        <a href="https://example.com" target="_blank">https://www.radhikalele.com</a>
+        <br />
+        <a href="tel:+18005555555">1-800-555-5555</a>
+        <br />
+        <a href="mailto:name@gmail.com" target="_blank">radhika.khaparde@gmail.com</a> 
+        <br />
+        2 Town Road - City -State - 99999
+        <br />
+        <a href="https://example.com">Unsubscribe</a> |
+        <a href="https://example.com">Prefernces</a>
+        <br />
+          
+      </p>
+    </div>
+    <!--End of wrapper-->
   </body>
 </html>
 
